@@ -1,16 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## PROYECTO: PLAN DE CLASE DIGITAL
+Mi proyecto de clase digital (prototipo) consistirá en mostrar los diferentes tipos de datos en Google Sheets, otorgándole al estudiante recursos digitales como un libro en formato PDF con información del tema, un videotutorial (de Aulaenlanube) y un pequeño test. El libro digital servirá como apoyo de lectura y se podrá descargar directamente desde este plan de clase. Por otro lado, el videotutorial estará incrustado dentro del sitio web con marcas de tiempo (índice de contenidos) para que los alumnos encuentren la información relevante de forma rápida al momento de realizar el ejercicio descrito en el PDF. Para esto, haré uso de NocoDB con el fin de almacenar tanto las marcas de tiempo como el enlace del video; de esta manera, se asegura que el recurso siempre esté disponible y sea fácil de actualizar en caso de que el video de YouTube sea modificado o reemplazado. El test guardará el progreso y el resultado del usuario en otra tabla de la misma base de datos de NocoDB, la cual servirá como indicador para la calificación. Esta sección la programaré con el apoyo de Inteligencia Artificial para asegurar la implementación de las mejores prácticas de desarrollo. Por último, las preguntas y respuestas de la prueba estarán almacenadas en una tabla independiente llamada "Evaluación".
