@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function MaterialPDF() {
 
   const descargarPDF = () => {
-    window.open("/pdf/02-Tipos-Datos.pdf", "_blank");
+    window.open("/pdf/02. TIPOS DE DATOS.pdf", "_blank");
   };
 
   return (
