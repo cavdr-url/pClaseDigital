@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 
 import NavbarClase from "./components/NavbarClase";
@@ -13,6 +14,8 @@ import EvaluacionCard from "./components/EvaluacionForm";
 import Footer from "./components/Footer";
 
 function App() {
+  const [videoTime, setVideoTime] = useState(0);
+
   return (
     <>
       <NavbarClase />
@@ -25,7 +28,7 @@ function App() {
         </section>
 
         {/* DESCRIPCIÓN */}
-        <section id="pdf" className="mb-5">
+        <section className="mb-5">
           <DescripcionProyecto />
         </section>
 
@@ -96,12 +99,12 @@ function App() {
         </section>
 
         {/* PDF */}
-        <section id="video" className="mb-5">
+        <section className="mb-5">
           <MaterialPDF />
         </section>
 
         {/* VIDEO + ÍNDICE */}
-        <section className="mb-5">
+        <section id="video" className="mb-5">
 
           <h2 className="mb-4 text-success">
             <i className="bi bi-play-circle me-2"></i>
@@ -111,11 +114,11 @@ function App() {
           <div className="row g-4">
 
             <div className="col-lg-8">
-              <VideoTutorial />
+              <VideoTutorial currentTime={videoTime} />
             </div>
 
             <div className="col-lg-4">
-              <IndiceContenido />
+              <IndiceContenido onSelectTime={setVideoTime} />
             </div>
 
           </div>
