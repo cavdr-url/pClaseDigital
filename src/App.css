@@ -1,8 +1,53 @@
-/* Estilos para el componente App */
-.subtitle {
-  text-align: justify;
-  background-color: #c7b7b7d3;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: bold;
+.hero-section {
+  background: linear-gradient(135deg, #fff 0%, #f0f8f2 100%) !important;
+  border: 1px solid #dfece2;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  letter-spacing: -.04em;
+}
+
+.hero-section .badge {
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+.hero-section .badge.bg-success {
+  background-color: var(--brand-green) !important;
+}
+
+.section-heading {
+  color: var(--text-muted);
+}
+
+.section-heading i {
+  color: var(--brand-green);
+}
+
+.resource-list .list-group-item {
+  border-color: #edf0ee;
+}
+
+footer {
+  color: var(--text-muted);
+}
+
+footer hr {
+  border-color: #dfe5e1;
+  opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding: 2rem !important;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section .col-lg-4 {
+    margin-bottom: 1.5rem;
+  }
 }

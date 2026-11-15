@@ -1,4 +1,99 @@
-/* Css General */
+:root {
+  --brand-green: #188038;
+  --brand-dark: #137333;
+  --brand-soft: #e6f4ea;
+  --page-bg: #f7f9f8;
+  --text-muted: #5f6368;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: #202124;
+  background: var(--page-bg);
+  font-family: "Google Sans", "Segoe UI", system-ui, sans-serif;
+}
+
+button,
+a,
+input {
+  font-family: inherit;
+}
+
 .text-justify {
   text-align: justify;
+}
+
+.navbar {
+  background: linear-gradient(110deg, var(--brand-dark), var(--brand-green)) !important;
+}
+
+.navbar-brand {
+  letter-spacing: -.01em;
+}
+
+.navbar .nav-link {
+  border-radius: .5rem;
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  background: rgba(255, 255, 255, .14);
+}
+
+main > .container {
+  max-width: 1180px;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+.card {
+  border: 1px solid #e5e9e6 !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 .45rem 1.5rem rgba(32, 33, 36, .06) !important;
+}
+
+.card-body {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+h2.text-success {
+  color: var(--brand-green) !important;
+  font-weight: 700;
+  letter-spacing: -.025em;
+}
+
+.btn-success {
+  --bs-btn-bg: var(--brand-green);
+  --bs-btn-border-color: var(--brand-green);
+  --bs-btn-hover-bg: var(--brand-dark);
+  --bs-btn-hover-border-color: var(--brand-dark);
+}
+
+.form-control:focus {
+  border-color: #7abf8d;
+  box-shadow: 0 0 0 .2rem rgba(24, 128, 56, .14);
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    --bs-gutter-x: 1.5rem;
+  }
+
+  .hero-section,
+  .card {
+    border-radius: .8rem !important;
+  }
 }
